@@ -9,6 +9,7 @@ import clsx from "clsx";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import NextTopLoader from "nextjs-toploader";
+import TopGlow from "@/components/TopGlow";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
@@ -37,15 +38,16 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen dark:bg-custom-gray font-sans antialiased",
           fontSans.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <NextTopLoader color="red"/>
-          <div className="relative flex flex-col h-screen">
+          <NextTopLoader color="red" />
+          <TopGlow />
+          <div className="relative flex flex-col h-screen overflow-x-hidden">
             <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+            <main className="container mx-auto max-w-7xl pt-5 px-6 flex-grow">
               {children}
               <Analytics />
               <SpeedInsights />

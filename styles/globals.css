@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Hero Section */
+
+.custom-button {
+    width: 48px; /* Equivalent to w-12 */
+    height: 48px; /* Equivalent to h-12 */
+    padding-right: 24px; /* Equivalent to pr-6 */
+    background-color: #3b82f6; /* Equivalent to bg-sky-700 */
+    color: #ffffff; /* Equivalent to text-neutral-50 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    transition-duration: 700ms; /* Equivalent to duration-700 */
+  }
+  
+  .custom-button:hover {
+    width: 176px; /* Equivalent to hover:w-44 */
+    background-color: #2563eb; /* Equivalent to hover:bg-sky-600 */
+  }
+  
+  .custom-button::before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    left: 32px; /* Equivalent to before:left-8 */
+    width: 24px; /* Equivalent to before:w-6 */
+    height: 24px; /* Equivalent to before:h-6 */
+    background-color: #3b82f6; /* Equivalent to before:bg-sky-700 */
+    transition-duration: 700ms; /* Equivalent to before:duration-700 */
+  }
+  
+  .custom-button:hover::before {
+    left: 160px; /* Equivalent to before:hover:left-40 */
+    background-color: #2563eb; /* Equivalent to before:hover:bg-sky-600 */
+    transform: rotate(45deg); /* Equivalent to before:rotate-45 */
+  }
+  
+  .custom-icon {
+    width: 32px; /* Equivalent to w-8 */
+    height: 32px; /* Equivalent to h-8 */
+    fill: #d1d5db; /* Equivalent to fill-neutral-50 */
+  }
+  
+  .custom-text {
+    opacity: 0; /* Equivalent to opacity-0 */
+    transition-duration: 100ms; /* Equivalent to duration-100 */
+    transform-origin: left; /* Equivalent to origin-left */
+    transform: scaleX(0); /* Equivalent to scale-x-0 */
+    transition-delay: 500ms; /* Equivalent to delay-500 */
+  }
+  
+  .custom-button:hover.custom-text {
+    opacity: 1; /* Equivalent to group-hover:opacity-100 */
+    transform: scaleX(100); /* Equivalent to group-hover:scale-x-100 */
+  }
+
