@@ -46,7 +46,7 @@ export default function RootLayout({
           <NextTopLoader color="red" />
           <TopGlow />
           <div className="relative flex flex-col h-screen overflow-x-hidden">
-            <Navbar />
+           
             <main className="container mx-auto max-w-7xl pt-5 px-6 flex-grow">
               {children}
               <Analytics />

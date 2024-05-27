@@ -1,9 +1,11 @@
 import React from "react";
 
 import HeroText from "./HeroText";
-import LinkedInButton from "./LinkedInButton";
+
 
 import { HeroSparkles } from "./HeroSparkles";
+import DownloadResume from "./DownloadResume";
+import HeroToolTip from "./HeroToolTip";
 
 const Hero = () => {
   return (
@@ -12,8 +14,9 @@ const Hero = () => {
 
       <HeroText />
 
-      <div className="flex justify-center z-10">
-        
+      <div className="mt-5 flex flex-col  justify-center items-center gap-5 z-10">
+        <HeroToolTip />
+        <DownloadResume />
       </div>
     </section>
   );
