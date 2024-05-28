@@ -3,7 +3,7 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import { TypewriterEffectSmooth } from "../ui/TypewriterEffect";
 const HeroText = () => {
   return (
-    <div className=" md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center mt-[4rem] ">
+    <div className=" md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center  ">
       <TypewriterEffectSmooth
         words={[
           {
@@ -20,7 +20,7 @@ const HeroText = () => {
       />
       <div className=" mt-[-1rem]">
         <TextGenerateEffect
-          words="A Dynamic Result Oriented SOFTWARE ENGINEER"
+          words="A Dynamic Result Driven SOFTWARE ENGINEER"
           className="text-center text-[25px] md:text-5xl lg:text-6xl  tracking-wide"
         />
       </div>

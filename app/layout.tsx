@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
+import { siteConfig } from "@/utils/site";
+import { fontSans } from "@/utils/fonts";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
@@ -46,7 +46,6 @@ export default function RootLayout({
           <NextTopLoader color="red" />
           <TopGlow />
           <div className="relative flex flex-col h-screen overflow-x-hidden">
-           
             <main className="container mx-auto max-w-7xl pt-5 px-6 flex-grow">
               {children}
               <Analytics />

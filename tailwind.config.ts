@@ -17,7 +17,7 @@ const config: Config = {
         "custom-gray": "#171717",
       },
       animation: {
-        spotlight: "spotlight 2s ease .75s 1 forwards",
+        spotlight: "spotlight 2s ease .75s 1 forwards", 
       },
       keyframes: {
         spotlight: {
@@ -34,6 +34,27 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui(),addVariablesForColors], //addVariablesForColors is for BackgroundBeams 
+
 };
+
+//BackgroundBeams stuff
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+ 
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
 export default config;
