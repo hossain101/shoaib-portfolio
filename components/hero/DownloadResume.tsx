@@ -1,10 +1,14 @@
 import React from 'react'
 import { Button } from '@nextui-org/button'
+import { Link } from '@nextui-org/link'
 
 const DownloadResume = () => {
   return (
-    <Button
-    className="overflow-hidden relative w-32 p-2 h-12 bg-red-600 text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group shadow-lg shadow-red-700"
+    <Link 
+    className="justify-center opacity-100 overflow-hidden relative w-32 p-2 h-12 bg-red-600 text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group shadow-lg shadow-red-700"
+    href='Shoaib_Hossain_Resume.pdf'
+    download={true}
+    
   >
     Resume
     <span
@@ -19,7 +23,7 @@ const DownloadResume = () => {
     <span
       className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 z-10"
     >Download!</span>
-  </Button>
+  </Link>
   
   )
 }
