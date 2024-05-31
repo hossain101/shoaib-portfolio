@@ -29,7 +29,7 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative min-h-full flex items-center bg-white dark:bg-transparent justify-center w-full group z-[-10]",
+        "relative min-h-full flex  bg-white dark:bg-transparent justify-center w-full group z-[-10]",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
@@ -40,14 +40,14 @@ export const HeroHighlight = ({
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
+              100px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
           `,
           maskImage: useMotionTemplate`
             radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
+              100px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
