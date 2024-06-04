@@ -8,7 +8,7 @@ export const HeroHighlight = ({
   className,
   containerClassName,
 }: {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
 }) => {
@@ -29,14 +29,14 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative min-h-full flex  bg-white dark:bg-transparent justify-center w-full group z-[-10]",
+        "relative min-h-full flex  bg-transparent dark:bg-transparent justify-center w-full group z-[-10]",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
     >
       <div className="absolute inset-0  pointer-events-none" />
       <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-red-500   absolute inset-0 opacity-0 transition duration-100 group-hover:opacity-100"
+        className="pointer-events-none bg-dot-thick-indigo-800 dark:bg-dot-thick-red-500   absolute inset-0 opacity-0 transition duration-100 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(

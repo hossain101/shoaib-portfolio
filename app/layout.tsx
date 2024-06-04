@@ -42,7 +42,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <NextTopLoader color="red" />
           <TopGlow />
           <div className="relative flex flex-col h-screen overflow-x-hidden">

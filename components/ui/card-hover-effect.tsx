@@ -8,13 +8,13 @@ export const HoverEffect = ({
   className,
 }: {
   className?: string;
-  children: React.ReactNode[];
+  children?: React.ReactNode[];
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("flex flex-wrap", className)}>
-      {children.map((item, idx) => (
+    <div className={cn("grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2  py-10 ", className)}>
+      {children!.map((item, idx) => (
         <div
           key={idx}
           className="relative group p-2 h-full  "
@@ -23,8 +23,8 @@ export const HoverEffect = ({
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 bg-neutral-200 dark:bg-red-800/[0.8] rounded-3xl hover-overlay"
+              <motion.div
+                className="absolute inset-0 bg-neutral-400 dark:bg-red-800/[0.8] rounded-3xl hover-overlay"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -38,7 +38,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <div className="z-20 ">{item}</div>
+          {item}
         </div>
       ))}
     </div>
