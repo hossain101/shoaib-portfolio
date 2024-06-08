@@ -3,13 +3,13 @@ import { TypewriterEffectSmooth } from "../ui/TypewriterEffect";
 
 const ExperienceTitle = () => {
   return (
-    <div className="flex flex-col items-center z-20 md:max-w-2xl lg:max-w-[60vw]   ">
+    <div className=" z-20   ">
       <TypewriterEffectSmooth
         words={[
           {
-            text: "journey",
+            text: "Journey",
             className:
-              "text-center text-[40px] md:text-5xl lg:text-8xl uppercase font-bold text-blue-500 dark:text-red-500 italic",
+              "text-center tracking-wide text-[40px] md:text-5xl lg:text-8xl uppercase font-bold text-blue-500 dark:text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-red-500 italic",
           },
         ]}
       />

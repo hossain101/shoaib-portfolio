@@ -1,8 +1,5 @@
+import Experience from "@/components/experience/Experience";
 
-export default function PricingPage() {
-	return (
-		<div>
-			<h1 >Pricing</h1>
-		</div>
-	);
+export default function ExperiencePage() {
+  return <Experience />;
 }

@@ -4,7 +4,7 @@ import { Link } from "@nextui-org/link";
 const DownloadResume = () => {
   return (
     <Link
-      className="justify-center opacity-100 overflow-hidden relative w-32 p-2 h-12 bg-red-600 text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group shadow-lg shadow-red-700"
+      className="justify-center opacity-100 overflow-hidden relative w-32 p-2 h-12 bg-custom-red text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group shadow-lg shadow-red-700"
       href="Shoaib_Hossain_Resume.pdf"
       download={true}
       isExternal

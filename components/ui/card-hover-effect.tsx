@@ -24,7 +24,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.div
-                className="absolute inset-0 bg-neutral-400 dark:bg-red-800/[0.8] rounded-3xl hover-overlay"
+                className="absolute inset-0 bg-neutral-400 dark:bg-gradient-to-r from-red-500 via-orange-400 to-red-500 rounded-3xl hover-overlay"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{

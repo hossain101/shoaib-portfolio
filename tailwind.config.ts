@@ -18,6 +18,7 @@ const config: Config = {
       
       colors: {
         "custom-gray": "#171717",
+        "custom-red": "linear-gradient(-45deg, #ff0000 0%, #ff7f00 50%, #ff0000 100%)"
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
