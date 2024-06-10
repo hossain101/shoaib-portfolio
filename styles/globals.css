@@ -158,8 +158,8 @@ ul {
 
 .experience-button {
   position: relative;
-  width: 100%; /* Make the button take the full width of its container */
-  height: 100%; 
+  width: 92px;
+  height: 40px;
   background-color: #000;
   display: flex;
   align-items: center;
@@ -182,11 +182,9 @@ ul {
   left: -4px;
   top: -1px;
   margin: auto;
-  top: -4px; /* Half of border-width */
-  left: -4px; /* Half of border-width */
-  right: -4px; /* Half of border-width */
-  bottom: -4px; /* Half of border-width */
-  border-radius: 12px;
+  width: 100px;
+  height: 48px;
+  border-radius: 10px;
   background: linear-gradient(-45deg, #ff0000 0%, #ff7f00 50%, #ff0000 100%);
   z-index: -10;
   pointer-events: none;
