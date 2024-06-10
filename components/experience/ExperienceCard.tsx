@@ -1,7 +1,8 @@
 import { Button } from "@nextui-org/button";
 import { Card, CardFooter, CardHeader } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
-import { Link } from "@nextui-org/link";
+import Link from "next/link";
+
 import React from "react";
 
 const ExperienceCard = ({
@@ -42,8 +43,8 @@ const ExperienceCard = ({
             <p className="text-tiny text-white/80">{year}</p>
           </div>
         </div>
-       <div className="max-w-">
-       <Link className="experience-button" >Read More</Link>
+       <div className="experience-button ">
+       <Link href="" className="text-nowrap" >Read More</Link>
        </div>
       
       </CardFooter>

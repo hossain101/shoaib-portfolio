@@ -156,9 +156,9 @@ ul {
  */
 
 
-.expereince-button {
+.experience-button {
   position: relative;
-  width: 120px;
+  width: 96px;
   height: 40px;
   background-color: #000;
   display: flex;
@@ -175,14 +175,14 @@ ul {
 
 
 
-.expereince-button::before {
+.experience-button::before {
   content: '';
   position: absolute;
   inset: 0;
   left: -4px;
   top: -1px;
   margin: auto;
-  width: 128px;
+  width: 104px;
   height: 48px;
   border-radius: 10px;
   background: linear-gradient(-45deg, #ff0000 0%, #ff7f00 50%, #ff0000 100%);
@@ -191,7 +191,7 @@ ul {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.expereince-button::after {
+.experience-button::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -201,13 +201,13 @@ ul {
   filter: blur(20px);
 }
 
-.expereince-button:hover::after {
+.experience-button:hover::after {
   filter: blur(30px);
 }
 
 
 
-.expereince-button:active::before {
+.experience-button:active::before {
   scale: 0.7;
 }
 
