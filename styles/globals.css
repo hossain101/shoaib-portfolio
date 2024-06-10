@@ -156,7 +156,7 @@ ul {
  */
 
 
-.experience-button {
+ .experience-button {
   position: relative;
   width: 92px;
   height: 40px;
@@ -211,7 +211,7 @@ ul {
   scale: 0.7;
 }
 
-
-.experience-red {
-  background: linear-gradient(-45deg, #ff0000 0%, #ff7f00 50%, #ff0000 100%);
+.experience-button:active::before {
+  scale: 0.7;
 }
+
