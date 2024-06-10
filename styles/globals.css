@@ -158,7 +158,7 @@ ul {
 
 .experience-button {
   position: relative;
-  width: 96px;
+  width: 92px;
   height: 40px;
   background-color: #000;
   display: flex;
@@ -182,7 +182,7 @@ ul {
   left: -4px;
   top: -1px;
   margin: auto;
-  width: 104px;
+  width: 100px;
   height: 48px;
   border-radius: 10px;
   background: linear-gradient(-45deg, #ff0000 0%, #ff7f00 50%, #ff0000 100%);
