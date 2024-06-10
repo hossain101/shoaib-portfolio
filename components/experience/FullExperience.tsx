@@ -5,7 +5,7 @@ import React from "react";
 
 const FullExperience = () => {
   return (
-    <div className="experience-button">
+    <div className="experience-button max-w-36">
     <Link href="/experience" className="text-nowrap">
       Full Journey
     </Link>

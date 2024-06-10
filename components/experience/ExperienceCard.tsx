@@ -43,8 +43,8 @@ const ExperienceCard = ({
             <p className="text-tiny text-white/80">{year}</p>
           </div>
         </div>
-       <div className="experience-button  text-nowrap">
-       <Link href="" className="" >Read More</Link>
+       <div className="experience-button  max-w-24 max-h-10">
+       <Link href="" className="text-nowrap" >Read More</Link>
        </div>
       
       </CardFooter>
