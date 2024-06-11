@@ -3,7 +3,7 @@ import { EvervaultCard } from "../ui/evervault-card";
 
 const UniqueStrategy = () => {
   return (
-    <section id="blog" className="min-h-full flex flex-col items-center  relative z-20">
+    <section id="blog" className="min-h-screen min-w-full flex flex-col items-center justify-center ">
    
    <h1>ddfd</h1>
   </section>

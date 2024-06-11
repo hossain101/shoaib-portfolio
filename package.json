@@ -9,7 +9,6 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@million/lint": "^1.0.0-rc.13",
 		"@nextui-org/button": "^2.0.31",
 		"@nextui-org/card": "^2.0.29",
 		"@nextui-org/code": "^2.0.27",
