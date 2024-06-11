@@ -1,6 +1,6 @@
 import React from "react";
 
-const TopGlow = () => {
+const ExperienceTopGlow = () => {
   return (
     <div className="animate-pulse animate-infinite  animate-ease-in ">
       <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-red-700 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -11,4 +11,4 @@ const TopGlow = () => {
   );
 };
 
-export default TopGlow;
+export default ExperienceTopGlow;

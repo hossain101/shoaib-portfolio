@@ -175,7 +175,7 @@ ul {
   gap: 12px;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 4px rgba(241, 87, 26, 0.856) ;
+  box-shadow: inset 0 0 0 2px rgba(241, 87, 26, 0.733) ;
   
 }
 

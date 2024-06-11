@@ -44,7 +44,7 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <NextTopLoader color="red" />
-          <TopGlow />
+    
 
           <main className="flex  flex-col  antialiased overflow-x-hidden  mx-auto max-w-full">
             {children}
