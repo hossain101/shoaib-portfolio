@@ -6,7 +6,10 @@ import HeroToolTip from "./HeroToolTip";
 
 const Hero = () => {
   return (
-    <section className="min-h-full flex flex-col items-center justify-center  md:py-10">
+    <section
+      id="hero"
+      className="min-h-screen min-w-full flex flex-col items-center justify-center "
+    >
       <HeroSparkles />
       <HeroText />
       <div className="mt-5 flex flex-col  justify-center items-center gap-5 z-10 ">

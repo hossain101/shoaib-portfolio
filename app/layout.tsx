@@ -38,20 +38,19 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen dark:bg-custom-gray font-sans antialiased",
+          " dark:bg-custom-gray font-sans  ",
           fontSans.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <NextTopLoader color="red" />
           <TopGlow />
-          <div className="relative flex flex-col h-screen overflow-x-hidden">
-            <main className="container mx-auto max-w-full pt-5  flex-grow">
-              {children}
-              <Analytics />
-              <SpeedInsights />
-            </main>
-          </div>
+
+          <main className="flex  flex-col  antialiased overflow-x-hidden  mx-auto max-w-full">
+            {children}
+            <Analytics />
+            <SpeedInsights />
+          </main>
         </Providers>
       </body>
     </html>
