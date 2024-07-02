@@ -15,13 +15,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
       colors: {
         "custom-gray": "#171717",
-        "custom-red": "linear-gradient(-45deg, #ff0000 0%, #ff7f00 50%, #ff0000 100%)"
+        "custom-red":
+          "linear-gradient(-45deg, #ff0000 0%, #ff7f00 50%, #ff0000 100%)",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
       },
       keyframes: {
         spotlight: {
@@ -32,6 +33,11 @@ const config: Config = {
           "100%": {
             opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
           },
         },
       },
