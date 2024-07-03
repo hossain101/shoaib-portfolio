@@ -1,16 +1,19 @@
 import { title } from "process";
 
 export const UniqueStrategyData = [
-    {title: 'Planning & Strategy',
-    description: 'We\'ll collaborate to map out your website\'s goals, target audience, and key functionalities. We\'ll discuss things like site structure, navigation, and content requirements. This is the foundation of your website and sets the stage for the rest of the project.',
-    imgUrl: '/strategy-1.webp'
-    },
-    {title: 'Development & Progress Update',
-    description: 'Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.',
-    imgUrl: '/strategy-2.webp'
-    },
-    {title: 'Development & Launch',
-    description: 'This is where the magic happens! Based on the approved design, I\'ll translate everything into functional code, building your website from the ground up.',
-    imgUrl: '/trategy-3.webp'
-    },
+    {
+        "title": "Strategic Software Design",
+        "description": "Initiating a collaborative dialogue, I meticulously chart the course for your software project, identifying key objectives, target users, and critical functionalities. Our discussions will cover the architectural blueprint, intuitive user interface, and thorough documentation strategy. This foundational phase establishes the solid base upon which the remainder of your project will be built.",
+        "imgUrl": "/design-plan.webp"
+      },
+      {
+        "title": "Innovative Development Approach",
+        "description": "Diving into the development phase, I harness state-of-the-art technologies and methodologies to breathe life into your software project. My methodology is rooted in a profound comprehension of your project's goals, its application domain, and the end-users' needs. This phase is marked by careful planning, where I convert initial ideas into a vibrant, user-friendly software solution. Our development process is guided by a comprehensive project specification, ensuring alignment with your vision and paving the way for a smooth transition from conception to realization. Regular updates and feedback sessions play a crucial role in fostering transparency and guaranteeing that the final product surpasses expectations.",
+        "imgUrl": "/development-process.webp"
+      },
+      {
+        "title": "Deployment & Enhancement",
+        "description": "Bringing our collective efforts to fruition, we reach the deployment stage, where your software project evolves from an abstract concept into a tangible reality. By employing sophisticated development practices, I ensure your software is not merely operational but also optimized for efficiency and usability. Following deployment, we maintain vigilant oversight and continuous improvement initiatives, ensuring your software maintains its position at the forefront of technological advancement.",
+        "imgUrl": "/deployment-and-enhancement.webp"
+      }
 ];
