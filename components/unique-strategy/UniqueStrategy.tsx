@@ -8,13 +8,12 @@ import UniqueStrategyTitle from "./UniqueStrategyTitle";
 const UniqueStrategy = () => {
   return (
     <section
-        id="unique-strategy"
-        className="min-h-screen min-w-full flex flex-col items-center justify-center relative rounded-xl"
+      id="unique-strategy"
+      className="min-h-screen min-w-full flex flex-col items-center justify-center relative rounded-xl"
     >
       <UniqueStrategyTitle />
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-3 pb-3 mx-3">
-      
         {UniqueStrategyData.map((data, index) => (
           <UniqueStrategyCard
             key={index}
@@ -23,12 +22,10 @@ const UniqueStrategy = () => {
             imgUrl={data.imgUrl}
           />
         ))}
-      
       </div>
-      
-     
+
       <BorderBeam
-        size={500}
+        size={400}
         duration={30}
         delay={9}
         borderWidth={2.5}
