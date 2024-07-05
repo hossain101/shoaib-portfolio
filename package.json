@@ -23,7 +23,7 @@
 		"@nextui-org/theme": "2.2.0",
 		"@react-aria/ssr": "^3.9.2",
 		"@react-aria/visually-hidden": "^3.8.10",
-		"@sentry/nextjs": "^8.14.0",
+		"@sentry/nextjs": "^8.15.0",
 		"@tsparticles/engine": "^3.4.0",
 		"@tsparticles/react": "^3.0.0",
 		"@tsparticles/slim": "^3.4.0",
