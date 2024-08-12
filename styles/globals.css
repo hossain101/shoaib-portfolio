@@ -158,7 +158,7 @@ ul {
 }
 
  */
-
+/* experience button */
 
  .experience-button {
   position: relative;
@@ -196,5 +196,47 @@ ul {
 }
 
 .experience-button:active::before {
+  transform: scale(0.7); /* Corrected */
+}
+
+
+/* Blog Button */
+
+.blog-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px rgba(16, 185, 129, 0.733) ;
+  
+}
+
+
+
+.blog-button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #48bb78 0%, #38a169 50%, #10b981 100%) ;
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.blog-button:hover::after {
+  filter: blur(30px);
+}
+
+.blog-button:active::before {
   transform: scale(0.7); /* Corrected */
 }
