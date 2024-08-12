@@ -12,6 +12,7 @@ const ExperienceTitle = () => {
               "text-center tracking-wide text-[40px] md:text-5xl lg:text-8xl uppercase font-bold text-blue-500 dark:text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-red-500 italic",
           },
         ]}
+        cursorClassName="bg-orange-800"
       />
     </div>
   );

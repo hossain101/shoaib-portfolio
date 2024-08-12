@@ -17,6 +17,7 @@ const HeroText = () => {
               "text-center text-[40px] md:text-5xl lg:text-8xl uppercase font-bold text-blue-500 dark:text-red-500 italic",
           },
         ]}
+        cursorClassName="bg-red-800"
       />
       <div className=" mt-[-1rem]">
         <TextGenerateEffect

@@ -1,10 +1,11 @@
 import React from 'react'
+import BlogTitle from './BlogTitle'
 
 const Blog = () => {
   return (
-    <section id="blog" className="min-h-screen min-w-full flex flex-col items-center justify-center ">
+    <section id="blog" className="min-h-screen min-w-full flex flex-col items-center justify-center relative rounded-xl">
    
-   <h1 className='text-9xl'>Blog</h1>
+   <BlogTitle />
    
   </section>
   )

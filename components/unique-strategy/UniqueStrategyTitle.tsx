@@ -14,9 +14,10 @@ const UniqueStrategyTitle = () => {
       {
         text: "done",
         className:
-          "text-center text-3xl md:text-6xl lg:text-7xl uppercase font-bold text-blue-500 dark:text-yellow-500 italic",
+          "text-center text-3xl md:text-6xl lg:text-7xl uppercase font-bold text-blue-500 dark:text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-900 italic",
       },
     ]}
+    cursorClassName="bg-yellow-500"
   />
 
 </div>
