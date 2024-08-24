@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <Experience />
-      <UniqueStrategy />
+      
       <Blog />
    
     </>

@@ -1,9 +1,57 @@
-import React from 'react'
+import React from "react";
+import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
+import { Image } from "@nextui-org/image";
+import { Divider } from "@nextui-org/divider";
 
-const BlogCard = () => {
+import { WobbleCard } from "../ui/wobble-card";
+import Link from "next/link";
+const BlogCard = ({
+  title,
+  category,
+  techStack,
+  postImageUrl,
+  footerURL,
+  footerText,
+}: {
+  title: string;
+  category: string;
+  techStack: string;
+  postImageUrl: string;
+  footerText: string;
+  footerURL: string;
+}) => {
   return (
-    <div>BlogCard</div>
-  )
-}
+    <div className=" mx-auto w-full overflow-hidden p-2">
+      <WobbleCard containerClassName="bg-black-800" className="">
+        <Link href="/blog">
+          <Card className="max-w-[400px]">
+            <CardHeader className="flex gap-3">
+              <div className="flex flex-col">
+                <p className="text-md">{title}</p>
+                <p className="text-small text-default-500">
+                  {techStack}
+                </p>
+                {category}
+              </div>
+            </CardHeader>
+            <Divider />
+            <CardBody>
+              <Image src={postImageUrl}  alt="blog-image"/>
+            </CardBody>
+            <Divider />
+            <CardFooter>
+              <Link
+                href='/blog'
+                className=" text-green-400 italic"
+              >
+                {footerText}
+              </Link>
+            </CardFooter>
+          </Card>
+        </Link>
+      </WobbleCard>
+    </div>
+  );
+};
 
-export default BlogCard
+export default BlogCard;
