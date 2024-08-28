@@ -2,10 +2,10 @@ import React from "react";
 import BlogTitle from "./BlogTitle";
 import BlogButton from "./BlogButton";
 import BlogCard from "./BlogCard";
-import { getAllPosts } from "@/firebase/read/read_server";
+import {  getThreePosts } from "@/firebase/read/read_server";
 
 const HomeBlogServer = async () => {
-  const posts = await getAllPosts();
+  const posts = await getThreePosts();
 
   if (!posts) {
     return <div>No data</div>;

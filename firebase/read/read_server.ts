@@ -1,11 +1,11 @@
-
 import {
   collection,
   doc,
   getDoc,
   getDocs,
   query,
-  where,
+  orderBy,
+  limit,
 } from "firebase/firestore";
 import { db } from "../firebase";
 
@@ -17,24 +17,18 @@ export const getAllPosts = async () => {
     return data;
   });
 };
-export const getAllPostsWithCategory = async (
-  categoryId: string
-): Promise<any[]> => {
-  try {
-    const categoryQuery = query(
-      collection(db, "posts"),
-      where("categoryId", "==", categoryId)
-    );
 
-    const querySnapshot = await getDocs(categoryQuery);
-    const data = querySnapshot.docs.map((doc) => {
-      return { id: doc.id, ...doc.data() };
-    });
-    return data;
-  } catch (error) {
-    console.error("Error fetching posts:", error);
-    throw error; // Rethrow or handle as per your application's error handling strategy
-  }
+export const getThreePosts = async (): Promise<any[]> => {
+  const postsRef = collection(db, "posts");
+
+  // Create a query to order posts by timestamp and limit to first 3
+  const q = query(postsRef, orderBy("Timestamp"), limit(3));
+
+  const querySnapshot = await getDocs(q);
+  const data = querySnapshot.docs.map((doc) => {
+    return { id: doc.id, ...doc.data() };
+  });
+  return data;
 };
 
 export const getPost = async (id: string) => {
