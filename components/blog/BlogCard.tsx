@@ -41,7 +41,7 @@ const BlogCard = ({
             <Divider />
             <CardFooter>
               <Link
-                href='/blog'
+                href={footerURL}
                 className=" text-green-400 italic"
               >
                 {footerText}
