@@ -18,7 +18,7 @@ export const getAllPosts = async () => {
   });
 };
 
-export const getThreePosts = async (): Promise<any[]> => {
+export const getThreePosts = async () => {
   const postsRef = collection(db, "posts");
 
   // Create a query to order posts by timestamp and limit to first 3
