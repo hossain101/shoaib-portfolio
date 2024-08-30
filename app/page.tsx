@@ -1,6 +1,5 @@
 import Blog from "@/components/blog/Blog";
-import HomeBlog from "@/components/blog/HomeBlog";
-import HomeBlogServer from "@/components/blog/HomeBlogServer";
+import BlogHome from "@/components/blog/BlogHome";
 
 import Experience from "@/components/experience/Experience";
 import Hero from "@/components/hero/Hero";
@@ -12,7 +11,7 @@ export default function Home() {
       <Hero />
       <Experience />
 
-     <HomeBlogServer />
+      <BlogHome />
     </>
   );
 }

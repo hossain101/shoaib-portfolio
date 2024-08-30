@@ -2,10 +2,10 @@ import React from "react";
 import BlogTitle from "./BlogTitle";
 import BlogButton from "./BlogButton";
 import BlogCard from "./BlogCard";
-import { getAllPosts } from "@/firebase/read/read_server";
+import { getThreePosts } from "@/firebase/read/read_server";
 
-const Blog = async () => {
-  const posts = await getAllPosts();
+const BlogHome = async () => {
+  const posts = await getThreePosts();
 
   if (!posts) {
     return <div>No data</div>;
@@ -29,10 +29,9 @@ const Blog = async () => {
           />
         ))}
       </div>
-
-      
+      <BlogButton />
     </section>
   );
 };
 
-export default Blog;
+export default BlogHome;
