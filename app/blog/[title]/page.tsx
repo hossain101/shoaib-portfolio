@@ -12,12 +12,17 @@ const decodedString = decodeURIComponent(encodedString);
   }
   
   return (
-    <main className="flex justify-center">
-      <section className="p-10 flex flex-col gap-4 border max-w-[800]">
+    <main className="flex border justify-center min-h-screen">
+      <section className="p-10  gap-4 ">
         <h1 className="text-3xl font-bold">{post?.title}</h1>
         <h1 className="text-3xl font-bold">{post?.category}</h1>
         <h1 className="text-3xl font-bold">{post?.techStack}</h1>
-        <Image src={post?.postImageUrl} alt="blog-image" />
+        <Image src={post?.postImageUrl} alt="blog-image" height={500} width={500} />
+
+        <div
+          className="prose"
+          dangerouslySetInnerHTML={{ __html: post?.content }}
+        ></div>
       </section>
     </main>
   );
