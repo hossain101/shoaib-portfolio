@@ -31,8 +31,8 @@ export const getThreePosts = async () => {
   return data;
 };
 
-export const getPost = async (id: string) => {
-  return await getDoc(doc(db, `posts/${id}`)).then((snapshot) =>
+export const getPost = async (title: string) => {
+  return await getDoc(doc(db, `posts/${title}`)).then((snapshot) =>
     snapshot.data()
   );
 };

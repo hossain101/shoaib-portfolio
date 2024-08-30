@@ -12,11 +12,11 @@ const Blog = async () => {
   }
   return (
     <section
-      id="blog"
+      
       className="min-h-screen min-w-full flex flex-col items-center justify-center relative rounded-xl z-[0]"
     >
       <BlogTitle />
-      <div className="flex gap-2 p-2">
+      <div className="flex">
         {posts.map((post: Record<string, string>, index: number) => (
           <BlogCard
             key={index}

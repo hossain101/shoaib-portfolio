@@ -26,7 +26,7 @@ const BlogCard = ({
   return (
     <div className=" mx-auto w-full overflow-hidden p-2">
       <WobbleCard containerClassName="bg-black-800" className="">
-        <Link href="/blog" color="success">
+        <Link href={`blog/${title}`} color="success">
           <Card className="max-w-[400px]">
             <CardHeader className="flex gap-3">
               <div className="flex flex-col">

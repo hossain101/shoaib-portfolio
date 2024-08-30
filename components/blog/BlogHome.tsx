@@ -13,7 +13,7 @@ const BlogHome = async () => {
   return (
     <section
       id="blog"
-      className="min-h-screen min-w-full flex flex-col items-center justify-center relative rounded-xl z-[0]"
+      className="min-h-screen min-w-full flex flex-col items-center justify-center relative rounded-xl z-[0] p-2"
     >
       <BlogTitle />
       <div className="flex gap-2 p-2">
